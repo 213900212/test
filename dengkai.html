@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>邓凯的个人网页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            color: #333;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 1.5em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            color: #333;
+            font-weight: bold;
+        }
+        nav {
+            text-align: center;
+            margin: 1em 0;
+        }
+        nav a {
+            margin: 0 1em;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+            font-family: 'Playfair Display', serif;
+        }
+        nav a:hover {
+            color: #007aff;
+        }
+        section {
+            padding: 3em 2em;
+            margin: 2em auto;
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+            backdrop-filter: blur(10px);
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: rgba(255, 255, 255, 0.6);
+            color: #333;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 1em;
+            font-family: 'Playfair Display', serif;
+        }
+        h3 {
+            color: #007aff;
+            font-family: 'Playfair Display', serif;
+        }
+        p {
+            line-height: 1.6;
+            font-family: 'Roboto', sans-serif;
+        }
+        button {
+            background-color: #007aff;
+            border: none;
+            color: white;
+            padding: 1em 2em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            margin: 1em 0;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #005bb5;
+            transform: scale(1.05);
+        }
+        .hidden {
+            display: none;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Add some additional styles for responsiveness */
+        @media (max-width: 768px) {
+            section {
+                margin: 1em;
+                padding: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>邓凯的个人网页</h1>
+    </header>
+    <nav>
+        <a href="#about">关于我</a>
+        <a href="#projects">项目展示</a>
+        <a href="#experience">工作及实习经历</a>
+        <a href="#skills">工作技能</a>
+        <a href="#education">教育背景</a>
+        <a href="#awards">荣誉奖项</a>
+    </nav>
+    <section id="about">
+        <h2>关于我</h2>
+        <p>你好，我是邓凯，一名来自上海市闵行区的IT工程师，专注于算法软件的开发和研究。我对计算机和生物结合方向特别感兴趣，并且在多个算法项目和加密货币交易策略方面有丰富的经验。</p>
+    </section>
+    <section id="projects">
+        <h2>项目展示</h2>
+        <h3>EndoscopicExamination 项目</h3>
+        <p>正在进行的项目，使用Qt开发，旨在改进内窥镜检查的算法和软件。</p>
+        <h3>其他项目</h3>
+        <p>1. 诺源0068测试系统：一个涉及复杂算法的软件测试项目。</p>
+        <p>2. 加密货币交易策略：使用Pine Script开发的交易策略，在OKX平台进行交易。</p>
+        <p>3. 沪杭高速磁悬浮项目研究：深入研究和了解全球磁悬浮项目，特别是沪杭高速磁悬浮项目。</p>
+        <p>4. 沪京磁悬浮项目研究：关于沪京磁悬浮项目的详细研究和分析。</p>
+    </section>
+    <section id="experience">
+        <h2>工作及实习经历</h2>
+        <h3>国家高性能医疗器械创新有限公司 工程师</h3>
+        <p>2022.02 - 2022.06</p>
+        <p>负责OCT系统嵌入式软件开发：C++程序固件开发、Python数据处理。</p>
+        <h3>上海伯杰医疗科技有限公司 算法工程师</h3>
+        <p>2022.10 - 2023.11</p>
+        <p>核酸检测数据拟合、检测结果判别算法、Python数据处理。</p>
+    </section>
+    <section id="skills">
+        <h2>工作技能</h2>
+        <p>熟练使用Eplan、Origin、Auto CAD、Xcode等专业软件。</p>
+        <p>使用C语言、Python等编程语言；对人工智能深度理解，openCV，嵌入式等。</p>
+        <p>掌握深度学习的基础知识和常用框架，如PyTorch、TensorFlow等，以及相关的数学和统计知识。</p>
+        <p>计算机视觉、自然语言处理、深度学习（图像分类、目标检测、人脸识别、图像分割、图像生成、视频理解等）。</p>
+    </section>
+    <section id="education">
+        <h2>教育背景</h2>
+        <p>院校：上海工程技术大学（重本分数线）</p>
+        <p>专业：电子信息工程 工学学士</p>
+        <p>研究方向：计算机视觉及自然语言处理</p>
+        <h3>主修课程</h3>
+        <p>复变函数、微型计算机原理、计算机语言、计算机组成原理、高等数学、计算机系统设计、数字电路、模拟电路、C语言、大学物理、离散数学、概率论。</p>
+        <h3>研究成果</h3>
+        <p>研究性论文1篇：“First-principles study of the surface structure and stability of BC5”，Mater. Res. Express 7 (2020) 015617（第一作者，SCI 收录）。</p>
+    </section>
+    <section id="awards">
+        <h2>荣誉奖项</h2>
+        <p>全国电子设计大赛二等奖、三等奖，“延锋杯”三等奖，大学生数学建模比赛S奖项。</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 邓凯. All rights reserved.</p>
+    </footer>
+    <script>
+        function showPopup(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+        function hidePopup(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
